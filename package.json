@@ -11,12 +11,14 @@
     "mysql": "2.18.1",
     "reflect-metadata": "^0.1.10",
     "rimraf": "^3.0.2",
-    "typeorm": "0.2.24"
+    "typeorm": "0.2.24",
+    "module-alias": "^2.2.2"
   },
   "devDependencies": {
     "@types/koa": "^2.11.3",
     "@types/koa-bodyparser": "^4.3.0",
     "@types/koa__router": "^8.0.2",
+    "@types/module-alias": "^2.0.0",
     "@types/node": "^8.0.29",
     "concurrently": "^5.1.0",
     "nodemon": "^2.0.2",
@@ -32,5 +34,12 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "_moduleAliases": {
+    "@validator": "build/src/plugins/validator",
+    "@plugins": "build/src/plugins",
+    "@decorator": "build/src/decorator",
+    "@repository": "build/src/repository",
+    "@request": "build/src/app/request"
+  }
 }

@@ -1,20 +1,12 @@
-import { CategoryRepository } from '../../repository/CategoryRepository'
-import {
-  Controller,
-  Get,
-  Post,
-  AutoRepository,
-  api,
-  Methods,
-} from '../../decorator'
+import { CategoryRepository } from '@repository/CategoryRepository'
+import { Controller, Get, Post, AutoRepository, api, Methods } from '@decorator'
 import { Context } from 'koa'
-import { getConnection, getCustomRepository, Repository } from 'typeorm'
-import { Category } from '../../entity/Category'
-import Validate, {
-  TwinkleRequestContext,
-} from '../../plugins/validator/Request'
-import { CategorySaveParams } from '../request/CategorySaveRequest'
-import CategorySaveRequest from '../request/CategorySaveRequest'
+import { getCustomRepository } from 'typeorm'
+import { Category } from '@entity/Category'
+import Validate, { TwinkleRequestContext } from '@validator/Request'
+import CategorySaveRequest, {
+  CategorySaveParams,
+} from '@request/CategorySaveRequest'
 
 @api.Api({ value: '分类', tags: ['分类的相关接口'], sort: 1 })
 @Controller('/category')
@@ -24,7 +16,7 @@ class CategoryController {
 
   @api.ApiOperation({
     value: '获取分类列表',
-    notes: '获取分类列表',
+    notes: '获取分类列表1',
     httpMethod: Methods.Get,
     sort: 1,
   })

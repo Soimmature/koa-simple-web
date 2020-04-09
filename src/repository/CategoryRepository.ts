@@ -1,4 +1,4 @@
-import { EntityRepository, TreeRepository, getManager } from 'typeorm'
+import { EntityRepository, TreeRepository } from 'typeorm'
 import { Category } from '../entity/Category'
 import { CategorySaveParams } from '../app/request/CategorySaveRequest'
 

@@ -5,6 +5,7 @@ export function AutoRepository(repository: Function) {
     target[propertyKey] = getCustomRepository(repository)
   }
 }
+
 // 注册repository
 export function AutoEntityRepository(entity: Function) {
   return function (target: any, propertyKey: string) {

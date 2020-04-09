@@ -1,5 +1,5 @@
 import * as resources from './resources'
-import { CommonInput } from '../validator/TwinkleRequest'
+import { CommonInput } from '@validator/TwinkleRequest'
 /**
  * 翻译
  *
