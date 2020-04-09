@@ -1,0 +1,7 @@
+POST  http://localhost:7001/api/auth/login?id=1
+Content-Type: application/json
+
+{
+  "a": "aa",
+  "id": 2
+}

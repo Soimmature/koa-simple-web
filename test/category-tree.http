@@ -1,0 +1,2 @@
+GET   http://localhost:3001/api/category/index
+Content-Type: application/json
