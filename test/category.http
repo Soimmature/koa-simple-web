@@ -1,0 +1,27 @@
+
+### tree
+GET   http://localhost:7001/api/category/index
+Content-Type: application/json
+
+### save
+POST  http://localhost:7001/api/category/save
+Content-Type: application/json
+
+
+
+# {
+#   "name": "category1",
+#   "description": "category-description1"
+# }
+
+# {
+#   "name": "category-child1",
+#   "description": "category-child-description1",
+#   "parentId": 1
+# }
+
+{
+  "name": "category-child1-child",
+  "description": "category-child-description1",
+  "parentId": 2
+}

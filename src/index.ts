@@ -20,7 +20,6 @@ app.use(BodyParser())
 
 createConnection().then(async (connection) => {
   // 加载控制器
-  // TODO: 会使文件内路径别名失效
   requireDirectory(path.resolve(__dirname, 'app/controller'))
 
   // api文档接口

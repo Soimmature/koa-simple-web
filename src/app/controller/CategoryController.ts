@@ -7,6 +7,7 @@ import Validate, { TwinkleRequestContext } from '@validator/Request'
 import CategorySaveRequest, {
   CategorySaveParams,
 } from '@request/CategorySaveRequest'
+import CategoryResource from '../resources/CategoryResource'
 
 @api.Api({ value: '分类', tags: ['分类的相关接口'], sort: 1 })
 @Controller('/category')
@@ -32,7 +33,7 @@ class CategoryController {
   @Get('/index')
   async index(ctx: Context) {
     const result = await this.categoryRepository.getChildren()
-    return result
+    return CategoryResource.Collection(result);
   }
 
   @Post('/save')
